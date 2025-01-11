@@ -1,7 +1,10 @@
 ---
+import logger from "../utils/logger"
 import type { CardProps } from "../types"
 
 const { terms: cards } = Astro.props
+
+logger.info("Rendering CardList component")
 ---
 
 <div class="card-container" id="cardContainer">
